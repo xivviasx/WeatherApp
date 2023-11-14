@@ -6,7 +6,22 @@
   },
   {
     "miasto": "Kraków",
-    "latitude":  50.049683,
-    "longitude": 19.944544
+    "latitude":  50.083,
+    "longitude": 19.917
+  },
+  {
+    "miasto": "Gniezno",
+    "latitude":  52.53533027414721,
+    "longitude": 17.577297132604347
+  },
+  {
+    "miasto": "Warszawa",
+    "latitude":  52.22735537119489,
+    "longitude": 21.011056865467275
+  },
+  {
+    "miasto": "Bydgoszcz",
+    "latitude":  53.123220534043355,
+    "longitude": 18.003083986973312
   }
 ]}

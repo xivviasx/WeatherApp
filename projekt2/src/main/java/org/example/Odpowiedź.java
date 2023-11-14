@@ -1,10 +1,11 @@
 package org.example;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 import java.util.Map;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Odpowiedź {
     private Coord coord;
     private List<Weather> weather;
@@ -76,7 +77,7 @@ public class Odpowiedź {
     public int getCod() {
         return cod;
     }
-
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Coord {
         private double lon;
         private double lat;
@@ -89,7 +90,7 @@ public class Odpowiedź {
             return lat;
         }
     }
-
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Weather {
         private int id;
         private String main;
@@ -112,7 +113,7 @@ public class Odpowiedź {
             return icon;
         }
     }
-
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Main {
         private double temp;
         private double feels_like;
@@ -145,10 +146,12 @@ public class Odpowiedź {
             return humidity;
         }
     }
-
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Wind {
         private double speed;
         private int deg;
+
+        private double gust;
 
         public double getSpeed() {
             return speed;
@@ -157,8 +160,12 @@ public class Odpowiedź {
         public int getDeg() {
             return deg;
         }
+        public double getGust() {
+            return gust;
+        }
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Rain {
         @JsonProperty("1h")
         private double h1;
@@ -168,6 +175,7 @@ public class Odpowiedź {
         }
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Clouds {
         private int all;
 
@@ -176,6 +184,7 @@ public class Odpowiedź {
         }
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Sys {
         private int type;
         private int id;
