@@ -23,7 +23,7 @@ public class Main {
         try {
             //odczytywanie danych json jako obiekty java i zapisywanie do obietku klasy Miasta
             ObjectMapper objectMapper = new ObjectMapper();
-            Miasta miasta = objectMapper.readValue(new File("J:\\Desktop\\3\\pracownia programowania\\projekt2\\projekt2\\src\\main\\java\\org\\example\\lista.json"), Miasta.class);
+            Miasta miasta = objectMapper.readValue(new File("J:\\Desktop\\3\\pracownia_programowania\\projekt2\\projekt2\\src\\main\\java\\org\\example\\lista.json"), Miasta.class);
 
             //pobieranie nazwy miasta od użytkownika; szukanie miasta w liscie miast
             Scanner scan = new Scanner(System.in);
@@ -64,26 +64,12 @@ public class Main {
             System.out.println("Temp: " + odpowiedz.getMain().getTemp() + " Cisnienie: " + odpowiedz.getMain().getPressure() + " Wilgotnosc: " + odpowiedz.getMain().getHumidity());
 
             //zapisywanie do pdf
-            //try- jak sie uda to to zrobi, a jak sie nie uda to nie zrobi
-            try (PDDocument document = new PDDocument()) { //tworzenie nowego obiektu klasy PDDocument
-                PDPage page = new PDPage(PDRectangle.A4); //tworzenie nowej strony w obiekcie klasy PDDocument
-                document.addPage(page);
+            Formaty.to_pdf(odpowiedz);
+            
 
-                try (PDPageContentStream contentStream = new PDPageContentStream(document, page)) { //obiekt umożliwiający dodawanie wartosci do strony
-                    contentStream.setFont(PDType1Font.HELVETICA_BOLD, 12);
-
-                    contentStream.beginText(); // rozpoczyna blok tekstu, który umożliwia dodawanie tekstu do strony
-                    contentStream.newLineAtOffset(50, 700);
-                    contentStream.showText("Temperatura: " + odpowiedz.getMain().getTemp());
-                    contentStream.showText(" Cisnienie: " + odpowiedz.getMain().getPressure());
-                    contentStream.showText(" Wilgotnosc: " + odpowiedz.getMain().getHumidity());
-                    contentStream.endText();
-                }
-                document.save("wyniki.pdf");
-            }
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }//
     }
 }
 
