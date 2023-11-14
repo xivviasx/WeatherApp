@@ -1,0 +1,12 @@
+{"miasta":[
+  {
+    "miasto": "Poznań",
+    "latitude":  52.409538,
+    "longitude": 16.931992
+  },
+  {
+    "miasto": "Kraków",
+    "latitude":  50.049683,
+    "longitude": 19.944544
+  }
+]}
