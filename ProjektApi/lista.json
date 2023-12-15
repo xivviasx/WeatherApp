@@ -1,0 +1,27 @@
+{"miasta":[
+  {
+    "miasto": "Szczecin",
+    "latitude":  53.42683238802719,
+    "longitude": 14.545316045451692
+  },
+  {
+    "miasto": "Gdynia",
+    "latitude":  54.51897263200484,
+    "longitude": 18.508454329852068
+  },
+  {
+    "miasto": "Gniezno",
+    "latitude":  52.53533027414721,
+    "longitude": 17.577297132604347
+  },
+  {
+    "miasto": "Warszawa",
+    "latitude":  52.22735537119489,
+    "longitude": 21.011056865467275
+  },
+  {
+    "miasto": "Bydgoszcz",
+    "latitude":  53.123220534043355,
+    "longitude": 18.003083986973312
+  }
+]}
