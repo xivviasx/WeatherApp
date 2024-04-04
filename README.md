@@ -1,4 +1,4 @@
-Projekt Pogoda to aplikacja konsolowa napisana w języku Java, umożliwiająca użytkownikowi sprawdzanie aktualnej pogody w wybranych miastach za pomocą danych pobranych z API OpenWeatherMap. Program pozwala użytkownikowi na wprowadzanie nazwy miasta, a następnie prezentuje informacje o temperaturze, ciśnieniu i wilgotności powietrza dla danego miejsca. Dodatkowo użytkownik ma możliwość zapisania wyników pomiarów w formacie PDF, JSON lub XML.
+Projekt WheatherApp to aplikacja konsolowa napisana w języku Java, umożliwiająca użytkownikowi sprawdzanie aktualnej pogody w wybranych miastach za pomocą danych pobranych z API OpenWeatherMap. Program pozwala użytkownikowi na wprowadzanie nazwy miasta, a następnie prezentuje informacje o temperaturze, ciśnieniu i wilgotności powietrza dla danego miejsca. Dodatkowo użytkownik ma możliwość zapisania wyników pomiarów w formacie PDF, JSON lub XML.
 
 Instrukcja obsługi
 Program rozpoczyna się od wczytania listy miast i ich współrzędnych geograficznych w formacie JSON.
